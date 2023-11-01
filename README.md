@@ -1,2 +1,3 @@
-# Public-hello-world
-Public-hello-world
+Simple Maven Project
+
+test
