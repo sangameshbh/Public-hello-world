@@ -1,4 +1,5 @@
-FROM tomcat:9.0
-#EXPOSE 8090
+FROM tomcat:8
+MAINTAINER "sachin.herakal@gmail.com"
 COPY webapp/target/webapp.war /home/ec2-user/apache-tomcat-9.0.82/webapps
-#ENTRYPOINT ["java","-jar","webapp.war"]
+EXPOSE 8081
+CMD ["catalina.sh", "run"] 
